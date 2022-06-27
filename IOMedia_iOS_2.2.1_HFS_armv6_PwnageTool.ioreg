@@ -1,0 +1,200 @@
++-o [1munknown vendor unknown product Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 9>
+  | {
+  |   "Removable" = No
+  |   "BSD Unit" = 0
+  |   "BSD Minor" = 0
+  |   "Ejectable" = No
+  |   "BSD Major" = 14
+  |   "BSD Name" = "disk0"
+  |   "Leaf" = No
+  |   "IOMediaIcon" = {"CFBundleIdentifier"="com.apple.iokit.IOStorageFamily","IOBundleResourceFile"="Internal.icns"}
+  |   "Preferred Block Size" = 2048
+  |   "Whole" = Yes
+  |   "Open" = Yes
+  |   "Size" = 8120172544
+  |   "Writable" = Yes
+  |   "Content" = "FDisk_partition_scheme"
+  |   "Content Hint" = ""
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 5>
+  |   {
+  |     "IOProbeScore" = 30000
+  |     "IOProviderClass" = "IOMedia"
+  |     "IOMatchCategory" = "IOMediaBSDClient"
+  |     "IOClass" = "IOMediaBSDClient"
+  |     "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+  |     "IOResourceMatch" = "IOBSD"
+  |   }
+  |   
+  +-o [1mIOFDiskPartitionScheme[0m  <class IORegistryEntry:IOService:IOStorage:IOPartitionScheme:IOFDiskPartitionScheme, !registered, !matched, active, busy 0, retain 7>
+    | {
+    |   "IOProbeScore" = 3000
+    |   "IOProviderClass" = "IOMedia"
+    |   "Content Mask" = "FDisk_partition_scheme"
+    |   "Content Table" = {"0x16"="DOS_FAT_16_Hidden","0x42"="Windows_LDM","0x04"="DOS_FAT_16_S","0x82"="Linux_Swap","0xFD"="Linux_RAID","0xAF"="Apple_HFS","0xA8"="Apple_UFS","0xA9"="NetBSD","0xAB"="Apple_Boot","0x8E"="Linux_LVM","0x0E"="Windows_FAT_16","0x14"="DOS_FAT_16_S_Hidden","0xA5"="FreeBSD","0x01"="DOS_FAT_12","0x0C"="Windows_FAT_32","0x0B"="DOS_FAT_32","0x83"="Linux","0xA7"="Apple_Rhapsody_UFS","0x06"="DOS_FAT_16","0x07"="Windows_NTFS","0xA6"="OpenBSD"}
+    |   "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+    |   "IOMatchCategory" = "IOStorage"
+    |   "IOPropertyMatch" = {"Whole"=Yes}
+    |   "IOClass" = "IOFDiskPartitionScheme"
+    | }
+    | 
+    +-o [1mUntitled 1[0m@1  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 8>
+    | | {
+    | |   "Removable" = No
+    | |   "BSD Unit" = 0
+    | |   "BSD Minor" = 1
+    | |   "Ejectable" = No
+    | |   "BSD Major" = 14
+    | |   "BSD Name" = "disk0s1"
+    | |   "Leaf" = Yes
+    | |   "Preferred Block Size" = 2048
+    | |   "Partition ID" = 1
+    | |   "Whole" = No
+    | |   "Open" = Yes
+    | |   "Size" = 544210944
+    | |   "Writable" = Yes
+    | |   "Content" = "Apple_HFS"
+    | |   "Content Hint" = "Apple_HFS"
+    | | }
+    | | 
+    | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 6>
+    |     {
+    |       "IOProbeScore" = 30000
+    |       "IOProviderClass" = "IOMedia"
+    |       "IOMatchCategory" = "IOMediaBSDClient"
+    |       "IOClass" = "IOMediaBSDClient"
+    |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+    |       "IOResourceMatch" = "IOBSD"
+    |     }
+    |     
+    +-o [1mUntitled 2[0m@2  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 8>
+      | {
+      |   "Removable" = No
+      |   "BSD Unit" = 0
+      |   "BSD Minor" = 2
+      |   "Ejectable" = No
+      |   "BSD Major" = 14
+      |   "BSD Name" = "disk0s2"
+      |   "Leaf" = Yes
+      |   "Preferred Block Size" = 2048
+      |   "Partition ID" = 2
+      |   "Whole" = No
+      |   "Open" = Yes
+      |   "Size" = 7575773184
+      |   "Writable" = Yes
+      |   "Content" = "Apple_HFS"
+      |   "Content Hint" = "Apple_HFS"
+      | }
+      | 
+      +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 6>
+          {
+            "IOProbeScore" = 30000
+            "IOProviderClass" = "IOMedia"
+            "IOMatchCategory" = "IOMediaBSDClient"
+            "IOClass" = "IOMediaBSDClient"
+            "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+            "IOResourceMatch" = "IOBSD"
+          }
+          
+
++-o [1munknown vendor unknown product Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 9>
+  | {
+  |   "Removable" = No
+  |   "BSD Unit" = 0
+  |   "BSD Minor" = 0
+  |   "Ejectable" = No
+  |   "BSD Major" = 14
+  |   "BSD Name" = "disk0"
+  |   "Leaf" = No
+  |   "IOMediaIcon" = {"CFBundleIdentifier"="com.apple.iokit.IOStorageFamily","IOBundleResourceFile"="Internal.icns"}
+  |   "Preferred Block Size" = 2048
+  |   "Whole" = Yes
+  |   "Open" = Yes
+  |   "Size" = 8120172544
+  |   "Writable" = Yes
+  |   "Content" = "FDisk_partition_scheme"
+  |   "Content Hint" = ""
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 5>
+  |   {
+  |     "IOProbeScore" = 30000
+  |     "IOProviderClass" = "IOMedia"
+  |     "IOMatchCategory" = "IOMediaBSDClient"
+  |     "IOClass" = "IOMediaBSDClient"
+  |     "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+  |     "IOResourceMatch" = "IOBSD"
+  |   }
+  |   
+  +-o [1mIOFDiskPartitionScheme[0m  <class IORegistryEntry:IOService:IOStorage:IOPartitionScheme:IOFDiskPartitionScheme, !registered, !matched, active, busy 0, retain 7>
+    | {
+    |   "IOProbeScore" = 3000
+    |   "IOProviderClass" = "IOMedia"
+    |   "Content Mask" = "FDisk_partition_scheme"
+    |   "Content Table" = {"0x16"="DOS_FAT_16_Hidden","0x42"="Windows_LDM","0x04"="DOS_FAT_16_S","0x82"="Linux_Swap","0xFD"="Linux_RAID","0xAF"="Apple_HFS","0xA8"="Apple_UFS","0xA9"="NetBSD","0xAB"="Apple_Boot","0x8E"="Linux_LVM","0x0E"="Windows_FAT_16","0x14"="DOS_FAT_16_S_Hidden","0xA5"="FreeBSD","0x01"="DOS_FAT_12","0x0C"="Windows_FAT_32","0x0B"="DOS_FAT_32","0x83"="Linux","0xA7"="Apple_Rhapsody_UFS","0x06"="DOS_FAT_16","0x07"="Windows_NTFS","0xA6"="OpenBSD"}
+    |   "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+    |   "IOMatchCategory" = "IOStorage"
+    |   "IOPropertyMatch" = {"Whole"=Yes}
+    |   "IOClass" = "IOFDiskPartitionScheme"
+    | }
+    | 
+    +-o [1mUntitled 1[0m@1  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 8>
+    | | {
+    | |   "Removable" = No
+    | |   "BSD Unit" = 0
+    | |   "BSD Minor" = 1
+    | |   "Ejectable" = No
+    | |   "BSD Major" = 14
+    | |   "BSD Name" = "disk0s1"
+    | |   "Leaf" = Yes
+    | |   "Preferred Block Size" = 2048
+    | |   "Partition ID" = 1
+    | |   "Whole" = No
+    | |   "Open" = Yes
+    | |   "Size" = 544210944
+    | |   "Writable" = Yes
+    | |   "Content" = "Apple_HFS"
+    | |   "Content Hint" = "Apple_HFS"
+    | | }
+    | | 
+    | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 6>
+    |     {
+    |       "IOProbeScore" = 30000
+    |       "IOProviderClass" = "IOMedia"
+    |       "IOMatchCategory" = "IOMediaBSDClient"
+    |       "IOClass" = "IOMediaBSDClient"
+    |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+    |       "IOResourceMatch" = "IOBSD"
+    |     }
+    |     
+    +-o [1mUntitled 2[0m@2  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 8>
+      | {
+      |   "Removable" = No
+      |   "BSD Unit" = 0
+      |   "BSD Minor" = 2
+      |   "Ejectable" = No
+      |   "BSD Major" = 14
+      |   "BSD Name" = "disk0s2"
+      |   "Leaf" = Yes
+      |   "Preferred Block Size" = 2048
+      |   "Partition ID" = 2
+      |   "Whole" = No
+      |   "Open" = Yes
+      |   "Size" = 7575773184
+      |   "Writable" = Yes
+      |   "Content" = "Apple_HFS"
+      |   "Content Hint" = "Apple_HFS"
+      | }
+      | 
+      +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 6>
+          {
+            "IOProbeScore" = 30000
+            "IOProviderClass" = "IOMedia"
+            "IOMatchCategory" = "IOMediaBSDClient"
+            "IOClass" = "IOMediaBSDClient"
+            "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+            "IOResourceMatch" = "IOBSD"
+          }
+          
+
