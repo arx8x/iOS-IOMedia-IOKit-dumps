@@ -1,0 +1,142 @@
++-o [1munknown vendor unknown product Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 11>
+  | {
+  |   "Leaf" = No
+  |   "Writable" = Yes
+  |   "BSD Minor" = 0
+  |   "Preferred Block Size" = 8192
+  |   "BSD Major" = 1
+  |   "BSD Name" = "disk0"
+  |   "Size" = 16103374848
+  |   "Content Hint" = ""
+  |   "IOMediaIcon" = {"CFBundleIdentifier"="com.apple.iokit.IOStorageFamily","IOBundleResourceFile"="Internal.icns"}
+  |   "Removable" = No
+  |   "Open" = Yes
+  |   "BSD Unit" = 0
+  |   "Whole" = Yes
+  |   "Content" = ""
+  |   "Ejectable" = No
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 6>
+  |   {
+  |     "IOProbeScore" = 30000
+  |     "IOMatchCategory" = "IOMediaBSDClient"
+  |     "IOResourceMatch" = "IOBSD"
+  |     "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+  |     "IOClass" = "IOMediaBSDClient"
+  |     "IOProviderClass" = "IOMedia"
+  |   }
+  |   
+  +-o [1mLightweightVolumeManager[0m  <class IORegistryEntry:IOService:IOStorage:IOFilterScheme:LightweightVolumeManager, registered, matched, active, busy 0, retain 7>
+    | {
+    |   "IOProviderClass" = "IOMedia"
+    |   "IOMatchCategory" = "IOStorage"
+    |   "IOProbeScore" = 0
+    |   "IOPropertyMatch" = {"Whole"=Yes}
+    |   "CFBundleIdentifier" = "com.apple.driver.LightweightVolumeManager"
+    |   "IOUserClientClass" = "LwVMUserClient"
+    |   "IOClass" = "LightweightVolumeManager"
+    | }
+    | 
+    +-o [1mLwVMMedia[0m@1  <class IORegistryEntry:IOService:IOStorage:IOMedia:LwVMMedia, registered, matched, active, busy 0, retain 10>
+      | {
+      |   "Leaf" = No
+      |   "Writable" = Yes
+      |   "Ejectable" = No
+      |   "BSD Minor" = 1
+      |   "Preferred Block Size" = 8192
+      |   "BSD Major" = 1
+      |   "IOMaximumByteCountWrite" = 16777216
+      |   "BSD Name" = "disk0s1"
+      |   "Size" = 15955189760
+      |   "Content Hint" = "LightweightVolumeManager_Media"
+      |   "Removable" = No
+      |   "Open" = Yes
+      |   "BSD Unit" = 0
+      |   "Whole" = No
+      |   "Content" = "LightweightVolumeManager_Media"
+      |   "IOMaximumByteCountRead" = 16777216
+      | }
+      | 
+      +-o [1mLwVMMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient:LwVMMediaBSDClient, registered, matched, active, busy 0, retain 6>
+      |   {
+      |     "IOProbeScore" = 32000
+      |     "IOMatchCategory" = "IOMediaBSDClient"
+      |     "CFBundleIdentifier" = "com.apple.driver.LightweightVolumeManager"
+      |     "IOResourceMatch" = "IOBSD"
+      |     "IOClass" = "LwVMMediaBSDClient"
+      |     "IOProviderClass" = "LwVMMedia"
+      |   }
+      |   
+      +-o [1mIOGUIDPartitionScheme[0m  <class IORegistryEntry:IOService:IOStorage:IOPartitionScheme:IOGUIDPartitionScheme, !registered, !matched, active, busy 0, retain 7>
+        | {
+        |   "IOProviderClass" = "IOMedia"
+        |   "IOMatchCategory" = "IOStorage"
+        |   "IOProbeScore" = 0
+        |   "IOPropertyMatch" = {"Content Hint"="LightweightVolumeManager_Media"}
+        |   "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |   "IOPersonalityPublisher" = "com.apple.driver.LightweightVolumeManager"
+        |   "IOClass" = "IOGUIDPartitionScheme"
+        | }
+        | 
+        +-o [1mSystem[0m@1  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 10>
+        | | {
+        | |   "Leaf" = Yes
+        | |   "Writable" = Yes
+        | |   "BSD Minor" = 2
+        | |   "Partition ID" = 1
+        | |   "Preferred Block Size" = 8192
+        | |   "UUID" = "78963DBC-2930-438C-AB1C-B0E1AD8BF343"
+        | |   "BSD Major" = 1
+        | |   "BSD Name" = "disk0s1s1"
+        | |   "Size" = 1444536320
+        | |   "Content Hint" = "48465300-0000-11AA-AA11-00306543ECAC"
+        | |   "Removable" = No
+        | |   "Open" = Yes
+        | |   "BSD Unit" = 0
+        | |   "Whole" = No
+        | |   "Content" = "48465300-0000-11AA-AA11-00306543ECAC"
+        | |   "Ejectable" = No
+        | | }
+        | | 
+        | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 7>
+        |     {
+        |       "IOProbeScore" = 30000
+        |       "IOMatchCategory" = "IOMediaBSDClient"
+        |       "IOResourceMatch" = "IOBSD"
+        |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |       "IOClass" = "IOMediaBSDClient"
+        |       "IOProviderClass" = "IOMedia"
+        |     }
+        |     
+        +-o [1mData[0m@2  <class IORegistryEntry:IOService:IOStorage:IOMedia, registered, matched, active, busy 0, retain 10>
+          | {
+          |   "Leaf" = Yes
+          |   "Writable" = Yes
+          |   "BSD Minor" = 3
+          |   "Partition ID" = 2
+          |   "Preferred Block Size" = 8192
+          |   "UUID" = "00D3A2AE-50D2-4316-BD05-D2DB3C5AA8AA"
+          |   "BSD Major" = 1
+          |   "BSD Name" = "disk0s1s2"
+          |   "Size" = 14510440448
+          |   "Content Hint" = "48465300-0000-11AA-AA11-00306543ECAC"
+          |   "Removable" = No
+          |   "Open" = Yes
+          |   "BSD Unit" = 0
+          |   "Whole" = No
+          |   "Content" = "48465300-0000-11AA-AA11-00306543ECAC"
+          |   "Ejectable" = No
+          | }
+          | 
+          +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, registered, matched, active, busy 0, retain 7>
+              {
+                "IOProbeScore" = 30000
+                "IOMatchCategory" = "IOMediaBSDClient"
+                "IOResourceMatch" = "IOBSD"
+                "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+                "IOClass" = "IOMediaBSDClient"
+                "IOProviderClass" = "IOMedia"
+              }
+              
+
