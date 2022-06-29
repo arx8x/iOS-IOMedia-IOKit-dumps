@@ -1,0 +1,547 @@
++-o [1mAPPLE SSD AP0064L Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x1000003c8, registered, matched, active, busy 0 (36 ms), retain 12>
+  | {
+  |   "Content" = "GUID_partition_scheme"
+  |   "Removable" = No
+  |   "Whole" = Yes
+  |   "Leaf" = No
+  |   "BSD Name" = "disk0"
+  |   "Ejectable" = No
+  |   "Preferred Block Size" = 4096
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Internal.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 0
+  |   "Writable" = Yes
+  |   "BSD Major" = 1
+  |   "Size" = 64000000000
+  |   "Open" = Yes
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 0
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003c9, registered, matched, active, busy 0 (0 ms), retain 6>
+  |   {
+  |     "IOProbeScore" = 30000
+  |     "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+  |     "IOMatchCategory" = "IOMediaBSDClient"
+  |     "IOClass" = "IOMediaBSDClient"
+  |     "IOProviderClass" = "IOMedia"
+  |     "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+  |     "IOResourceMatch" = "IOBSD"
+  |   }
+  |   
+  +-o [1mIOGUIDPartitionScheme[0m  <class IORegistryEntry:IOService:IOStorage:IOPartitionScheme:IOGUIDPartitionScheme, id 0x1000003ca, !registered, !matched, active, busy 0 (33 ms), retain 6>
+    | {
+    |   "IOProbeScore" = 4000
+    |   "IOPropertyMatch" = {"Whole"=Yes}
+    |   "IOMatchCategory" = "IOStorage"
+    |   "IOClass" = "IOGUIDPartitionScheme"
+    |   "IOProviderClass" = "IOMedia"
+    |   "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+    |   "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+    |   "UUID" = "A705E698-29E6-4E2B-AB92-B86486DF7FDF"
+    |   "Content Mask" = "GUID_partition_scheme"
+    | }
+    | 
+    +-o [1mContainer[0m@1  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x1000003ce, registered, matched, active, busy 0 (33 ms), retain 12>
+      | {
+      |   "Content" = "7C3457EF-0000-11AA-AA11-00306543ECAC"
+      |   "Removable" = No
+      |   "Whole" = No
+      |   "Leaf" = No
+      |   "BSD Name" = "disk0s1"
+      |   "Ejectable" = No
+      |   "Preferred Block Size" = 4096
+      |   "Base" = 24576
+      |   "BSD Unit" = 0
+      |   "BSD Minor" = 1
+      |   "Writable" = Yes
+      |   "UUID" = "E91F07AC-2E1E-4B81-A9EF-B6F3FB72A878"
+      |   "Partition ID" = 1
+      |   "BSD Major" = 1
+      |   "Size" = 63999954944
+      |   "Open" = Yes
+      |   "Content Hint" = "7C3457EF-0000-11AA-AA11-00306543ECAC"
+      |   "GPT Attributes" = 0
+      | }
+      | 
+      +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003cf, registered, matched, active, busy 0 (0 ms), retain 7>
+      |   {
+      |     "IOProbeScore" = 30000
+      |     "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+      |     "IOMatchCategory" = "IOMediaBSDClient"
+      |     "IOClass" = "IOMediaBSDClient"
+      |     "IOProviderClass" = "IOMedia"
+      |     "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+      |     "IOResourceMatch" = "IOBSD"
+      |   }
+      |   
+      +-o [1mAppleAPFSContainer[0m  <class IORegistryEntry:IOService:IOStorage:IOPartitionScheme:AppleAPFSContainer, id 0x1000003d0, registered, matched, active, busy 0 (1 ms), retain 13>
+        | {
+        |   "IOClass" = "AppleAPFSContainer"
+        |   "CFBundleIdentifier" = "com.apple.filesystems.apfs"
+        |   "IOProviderClass" = "IOMedia"
+        |   "IOPropertyMatch" = ({"Content Hint"="7C3457EF-0000-11AA-AA11-00306543ECAC"})
+        |   "Logical Block Size" = 4096
+        |   "IOUserClientClass" = "AppleAPFSUserClient"
+        |   "IOProbeScore" = 1000
+        |   "IOMatchCategory" = "IOStorage"
+        |   "Statistics" = {"Fusion: Number of middle tree metadata bytes written"=0,"Write burst: Total number of bytes written"=94789559678,"Bytes read from block device"=1445826727936,"Fusion: Metadata bytes read from SSD directly"=0,"Fusion: Extents copied into read cache"=0,"Fusion: Metadata bytes written to SSD directly"=0,"Fusion: User data bytes read from WBC or W2RC"=0,"Object cache: Number of reads"=186187762,"Object cache: Number of writes"=16247146,"Metadata: Number of bytes written to checkpoint area"=10709905408,"Fusion: Bytes evicted from read cache"=0,"FX defrag: Number of file extents skipped during relocation"=0,"Object cache: Number of full cache flushes"=355951,"Fusion: User data bytes read from HDD directly"=0,"FX defrag: Number of spaceman chunks chosen for data relocation"=0,"FX defrag: Number of times free extent defrag has run"=10,"Fusion: Metadata bytes read from HDD directly"=0,"Fusion: Number of times the user data read from SSD directly"=0,"Fusion: Number of times the user data read from WBC or W2RC"=0,"Fusion: Number of times Dirty MT mapping was removed because of a deallocation"=0,"FX defrag: Number of file extents reallocated"=0,"Fusion: Number of times the user data read from HDD directly"=0,"Fusion: RC Bytes deferred to be freed when Dirty MT mapping was removed because of a deallocation"=0,"Object cache: Number of hits"=12193542860,"Fusion: Number of times the user data written to WBC"=0,"Fusion: Errors when copying data from write-back cache"=0,"Fusion: Extents copied from write-back cache"=0,"Fusion: Number of wbc list metadata bytes written"=0,"Object cache: Number of partial cache flushes"=0,"Metadata: Number of read errors"=0,"Fusion: User data bytes written to WBC"=0,"Metadata: Number of spaceman bitmap bytes read"=696209408,"Write burst: Burst count"=989970,"Metadata: Number of bytes read"=762625073152,"Fusion: User data bytes read from RC"=0,"Write burst: Total number of I/Os"=160208442,"Fusion: User data bytes read from SSD directly"=0,"Metadata: Number of bytes written"=66548310016,"Number of times device's cache flushed"=4818,"Fusion: Number of times Clean MT mapping was removed because of a deallocation"=0,"Metadata: Number of write errors"=0,"Fusion: User data bytes written to HDD directly"=0,"Fusion: Number of extents moved for pinning"=0,"Fusion: User data bytes written to W2RC"=0,"Write requests sent to block device"=4569754,"Fusion: Number of times Dirty MT mapping was removed because of an overwrite"=0,"Fusion: Number of times the user data written to HDD directly"=0,"Fusion: RC Bytes deferred to be freed when Dirty MT mapping was removed because of an overwrite"=0,"Write burst: Total time between bursts"=2304682861226140,"Fusion: Number of times the user data read from RC"=0,"Fusion: RC Bytes freed when Clean MT mapping was removed because of an overwrite"=0,"Read requests sent to block device"=42574463,"Fusion: Number of times Clean MT mapping was removed because of an overwrite"=0,"Fusion: Number of times pinning operation failed"=0,"Fusion: Extents evicted from read cache"=0,"Object cache: Total number of queries"=12382469592,"Write burst: Total time"=30701509690273,"Fusion: Number of middle tree metadata bytes read"=0,"Fusion: Number of times Fusion internal IO was throttled for Promoter"=0,"Fusion: Number of times Fusion internal IO was throttled for Elevator"=0,"Fusion: Number of wbc list metadata bytes read"=0,"Fusion: RC Bytes freed when Clean MT mapping was removed because of a deallocation"=0,"Fusion: User data bytes read from the WBC before the write was flushed completely"=0,"Fusion: Bytes copied into read cache"=0,"FX defrag: Number of blocks reallocated"=0,"FX defrag: Number of times free extent defrag has completed aggressively"=0,"Number of transactions flushed"=355951,"Fusion: Number of file pinning requests"=0,"FX defrag: Number of times free extent defrag has completed"=10,"Fusion: Number of times the user data read from the WBC before the write was flushed completely"=0,"Bytes written to block device"=157374955520,"Fusion: Metadata bytes written to HDD directly"=0,"Object cache: Number of evictions"=186187868,"Object cache: Number of objects processed by partial cache flushes"=0,"Fusion: Bytes copied from write-back cache"=0,"FX defrag: Number of times free extent defrag has run aggressively"=0,"Number of transaction updates"=186007709,"Fusion: Number of times Fusion elevator started IO batch"=0,"Metadata: Number of spaceman bitmap bytes written"=10239475712,"Fusion: User data bytes written to SSD directly"=0,"Fusion: Number of times the user data written to W2RC"=0,"Fusion: Number of bytes moved for pinning"=0,"Fusion: Number of times the user data written to SSD directly"=0,"Fusion: Errors when copying data into read cache"=0}
+        |   "UUID" = "7FFFF54A-0A97-4BCE-AB47-280F85FB8B25"
+        |   "Status" = "Online"
+        |   "CFBundleIdentifierKernel" = "com.apple.filesystems.apfs"
+        | }
+        | 
+        +-o [1mSystem[0m@1  <class IORegistryEntry:IOService:IOStorage:IOMedia:AppleAPFSVolume, id 0x1000003e6, registered, matched, active, busy 0 (1 ms), retain 10>
+        | | {
+        | |   "Logical Block Size" = 4096
+        | |   "Open" = Yes
+        | |   "Preferred Block Size" = 4096
+        | |   "Writable" = Yes
+        | |   "Size" = 63926554624
+        | |   "Content" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "BSD Minor" = 4
+        | |   "FormattedBy" = "hfs_convert (1412.120.2)"
+        | |   "Whole" = No
+        | |   "IOStorageFeatures" = {"Unmap"=Yes,"Priority"=Yes,"Barrier"=Yes}
+        | |   "Removable" = No
+        | |   "UUID" = "C3530016-B9BF-404A-A529-EA85B696C816"
+        | |   "CaseSensitive" = Yes
+        | |   "Statistics" = {"Metadata: Number of fsroot bytes written"=1224704,"Bytes read from block device"=818513170432,"Calls to VNOP_ALLOCATE"=0,"Calls to VNOP_LOOKUP"=14860088,"Calls to VNOP_GETATTRLISTBULK"=242938,"Calls to VNOP_CLOSE"=34659705,"Calls to VNOP_MNOMAP"=2520387,"Calls to VNOP_INACTIVE"=24879698,"Calls to VNOP_REMOVENAMEDSTREAM"=0,"Calls to VNOP_READ"=30428283,"File defrag: Number of failed defrag attempts"=0,"Calls to VNOP_BLOCKMAP"=13901207,"Calls to VNOP_CREATE"=272,"Metadata: Number of objects failed to write"=0,"File defrag: Number of blocks reallocated"=0,"Calls to VNOP_LISTXATTR"=9101,"Metadata: Number of gbitmap bytes written"=0,"Calls to VNOP_FSYNC"=8392610,"Calls to VNOP_MMAP_CHECK"=12402815,"Calls to VNOP_MMAP"=14770455,"File defrag: Number of fragmented files found that we couldn't track"=0,"Calls to VNOP_GETNAMEDSTREAM"=0,"Read requests received from user"=12704208,"Calls to VNOP_RENAME"=208,"Calls to VNOP_SETATTR"=938,"Calls to VNOP_MKDIR"=11,"File defrag: Number of files that finished defragmentation"=0,"Metadata: Number of bytes read"=36016574464,"Calls to VNOP_READLINK"=242796742,"Calls to VNOP_LINK"=54,"Metadata: Number of bytes written"=3846144,"Calls to VNOP_READDIR"=4251161,"File defrag: Number of files scanned for fragmentation"=0,"File defrag: Number of fragmented files found during scans"=0,"File defrag: Number of file extents split"=0,"Bytes written by user"=6325512,"Calls to VNOP_OPEN"=34659926,"Calls to VNOP_MAKENAMEDSTREAM"=0,"Write requests sent to block device"=526,"File defrag: Number of file extents reallocated"=0,"Calls to VNOP_PATHCONF"=2483,"Read requests sent to block device"=13894441,"Calls to VNOP_SYMLINK"=4,"Calls to VNOP_EXCHANGE"=0,"Metadata: Number of fsroot bytes read"=31298027520,"Metadata: Number of omap bytes read"=4718137344,"Metadata: Number of snapmeta bytes read"=0,"Calls to VNOP_RMDIR"=14,"Calls to VNOP_STRATEGY"=13894967,"Metadata: Number of snapmeta bytes written"=0,"Calls to VNOP_GETXATTR"=38155279,"Decmpfs errors"=0,"Calls to VNOP_OFFTOBLK"=0,"Metadata: Number of blockref bytes read"=405504,"Calls to VNOP_CLONEFILE"=0,"Metadata: Number of objects failed to read"=0,"Bytes read by user"=19253904001,"Calls to VNOP_MKNOD"=0,"Bytes written to block device"=7970816,"Metadata: Number of gbitmap bytes read"=0,"Calls to VNOP_REMOVEXATTR"=0,"Calls to VNOP_WRITE"=6157,"Calls to VNOP_REMOVE"=266,"Calls to VNOP_PAGEIN"=11852150,"Calls to VNOP_BLKTOOFF"=0,"Calls to VNOP_RECLAIM"=8391546,"File defrag: Number of regions to defrag found during scans"=0,"Metadata: Number of blockref bytes written"=458752,"Calls to VNOP_RENAMEX"=208,"Calls to VNOP_IOCTL"=757904,"Calls to VNOP_GETATTR"=98574160,"Calls to VNOP_SETXATTR"=2,"Write requests received from user"=6141,"Metadata: Number of omap bytes written"=1847296,"Calls to VNOP_PAGEOUT"=19}
+        | |   "BSD Unit" = 0
+        | |   "Ejectable" = No
+        | |   "VolGroupUUID" = "00000000-0000-0000-0000-000000000000"
+        | |   "Role" = ("System")
+        | |   "BSD Name" = "disk0s1s1"
+        | |   "BSD Major" = 1
+        | |   "Physical Block Size" = 4096
+        | |   "Status" = "Online"
+        | |   "Content Hint" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "Leaf" = Yes
+        | | }
+        | | 
+        | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003ef, registered, matched, active, busy 0 (0 ms), retain 7>
+        |     {
+        |       "IOProbeScore" = 30000
+        |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |       "IOMatchCategory" = "IOMediaBSDClient"
+        |       "IOClass" = "IOMediaBSDClient"
+        |       "IOProviderClass" = "IOMedia"
+        |       "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        |       "IOResourceMatch" = "IOBSD"
+        |     }
+        |     
+        +-o [1mData[0m@2  <class IORegistryEntry:IOService:IOStorage:IOMedia:AppleAPFSVolume, id 0x1000003e7, registered, matched, active, busy 0 (1 ms), retain 10>
+        | | {
+        | |   "Logical Block Size" = 4096
+        | |   "Open" = Yes
+        | |   "Preferred Block Size" = 4096
+        | |   "Writable" = Yes
+        | |   "Size" = 63926554624
+        | |   "Content" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "Encrypted" = Yes
+        | |   "EncryptionType" = "Default"
+        | |   "Whole" = No
+        | |   "FormattedBy" = "newfs_apfs (1412.120.2)"
+        | |   "IOStorageFeatures" = {"Unmap"=Yes,"Priority"=Yes,"Barrier"=Yes}
+        | |   "Removable" = No
+        | |   "UUID" = "049A1AFF-588E-43F0-9660-6AA8A26452D3"
+        | |   "CaseSensitive" = Yes
+        | |   "Statistics" = {"Metadata: Number of fsroot bytes written"=0,"Bytes read from block device"=0,"Calls to VNOP_ALLOCATE"=0,"Calls to VNOP_LOOKUP"=0,"Calls to VNOP_GETATTRLISTBULK"=0,"Calls to VNOP_CLOSE"=0,"Calls to VNOP_MNOMAP"=0,"Calls to VNOP_INACTIVE"=0,"Calls to VNOP_REMOVENAMEDSTREAM"=0,"Calls to VNOP_READ"=0,"File defrag: Number of failed defrag attempts"=0,"Calls to VNOP_BLOCKMAP"=0,"Calls to VNOP_CREATE"=0,"Metadata: Number of objects failed to write"=0,"File defrag: Number of blocks reallocated"=0,"Calls to VNOP_LISTXATTR"=0,"Metadata: Number of gbitmap bytes written"=0,"Calls to VNOP_FSYNC"=0,"Calls to VNOP_MMAP_CHECK"=0,"Calls to VNOP_MMAP"=0,"File defrag: Number of fragmented files found that we couldn't track"=0,"Calls to VNOP_GETNAMEDSTREAM"=0,"Read requests received from user"=0,"Calls to VNOP_RENAME"=0,"Calls to VNOP_SETATTR"=0,"Calls to VNOP_MKDIR"=0,"File defrag: Number of files that finished defragmentation"=0,"Metadata: Number of bytes read"=0,"Calls to VNOP_READLINK"=0,"Calls to VNOP_LINK"=0,"Metadata: Number of bytes written"=0,"Calls to VNOP_READDIR"=0,"File defrag: Number of files scanned for fragmentation"=0,"File defrag: Number of fragmented files found during scans"=0,"File defrag: Number of file extents split"=0,"Bytes written by user"=0,"Calls to VNOP_OPEN"=0,"Calls to VNOP_MAKENAMEDSTREAM"=0,"Write requests sent to block device"=0,"File defrag: Number of file extents reallocated"=0,"Calls to VNOP_PATHCONF"=0,"Read requests sent to block device"=0,"Calls to VNOP_SYMLINK"=0,"Calls to VNOP_EXCHANGE"=0,"Metadata: Number of fsroot bytes read"=0,"Metadata: Number of omap bytes read"=0,"Metadata: Number of snapmeta bytes read"=0,"Calls to VNOP_RMDIR"=0,"Calls to VNOP_STRATEGY"=0,"Metadata: Number of snapmeta bytes written"=0,"Calls to VNOP_GETXATTR"=0,"Decmpfs errors"=0,"Calls to VNOP_OFFTOBLK"=0,"Metadata: Number of blockref bytes read"=0,"Calls to VNOP_CLONEFILE"=0,"Metadata: Number of objects failed to read"=0,"Bytes read by user"=0,"Calls to VNOP_MKNOD"=0,"Bytes written to block device"=0,"Metadata: Number of gbitmap bytes read"=0,"Calls to VNOP_REMOVEXATTR"=0,"Calls to VNOP_WRITE"=0,"Calls to VNOP_REMOVE"=0,"Calls to VNOP_PAGEIN"=0,"Calls to VNOP_BLKTOOFF"=0,"Calls to VNOP_RECLAIM"=0,"File defrag: Number of regions to defrag found during scans"=0,"Metadata: Number of blockref bytes written"=0,"Calls to VNOP_RENAMEX"=0,"Calls to VNOP_IOCTL"=0,"Calls to VNOP_GETATTR"=0,"Calls to VNOP_SETXATTR"=0,"Write requests received from user"=0,"Metadata: Number of omap bytes written"=0,"Calls to VNOP_PAGEOUT"=0}
+        | |   "BSD Unit" = 0
+        | |   "Ejectable" = No
+        | |   "VolGroupUUID" = "00000000-0000-0000-0000-000000000000"
+        | |   "Role" = ("Data")
+        | |   "BSD Name" = "disk0s1s2"
+        | |   "BSD Major" = 1
+        | |   "Physical Block Size" = 4096
+        | |   "BSD Minor" = 7
+        | |   "Locked" = No
+        | |   "Status" = "Online"
+        | |   "Content Hint" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "Leaf" = Yes
+        | | }
+        | | 
+        | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003ed, registered, matched, active, busy 0 (0 ms), retain 7>
+        |     {
+        |       "IOProbeScore" = 30000
+        |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |       "IOMatchCategory" = "IOMediaBSDClient"
+        |       "IOClass" = "IOMediaBSDClient"
+        |       "IOProviderClass" = "IOMedia"
+        |       "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        |       "IOResourceMatch" = "IOBSD"
+        |     }
+        |     
+        +-o [1mxART[0m@3  <class IORegistryEntry:IOService:IOStorage:IOMedia:AppleAPFSVolume, id 0x1000003e8, registered, matched, active, busy 0 (1 ms), retain 10>
+        | | {
+        | |   "Logical Block Size" = 4096
+        | |   "Open" = Yes
+        | |   "Preferred Block Size" = 4096
+        | |   "Writable" = Yes
+        | |   "Size" = 10485760
+        | |   "Content" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "BSD Minor" = 6
+        | |   "FormattedBy" = "newfs_apfs (1412.120.2)"
+        | |   "Whole" = No
+        | |   "IOStorageFeatures" = {"Unmap"=Yes,"Priority"=Yes,"Barrier"=Yes}
+        | |   "Removable" = No
+        | |   "UUID" = "36ED9F2A-CC3C-4D00-9122-B04334F85EF9"
+        | |   "CaseSensitive" = Yes
+        | |   "Statistics" = {"Metadata: Number of fsroot bytes written"=0,"Bytes read from block device"=0,"Calls to VNOP_ALLOCATE"=0,"Calls to VNOP_LOOKUP"=0,"Calls to VNOP_GETATTRLISTBULK"=0,"Calls to VNOP_CLOSE"=0,"Calls to VNOP_MNOMAP"=0,"Calls to VNOP_INACTIVE"=0,"Calls to VNOP_REMOVENAMEDSTREAM"=0,"Calls to VNOP_READ"=0,"File defrag: Number of failed defrag attempts"=0,"Calls to VNOP_BLOCKMAP"=0,"Calls to VNOP_CREATE"=0,"Metadata: Number of objects failed to write"=0,"File defrag: Number of blocks reallocated"=0,"Calls to VNOP_LISTXATTR"=0,"Metadata: Number of gbitmap bytes written"=0,"Calls to VNOP_FSYNC"=0,"Calls to VNOP_MMAP_CHECK"=0,"Calls to VNOP_MMAP"=0,"File defrag: Number of fragmented files found that we couldn't track"=0,"Calls to VNOP_GETNAMEDSTREAM"=0,"Read requests received from user"=0,"Calls to VNOP_RENAME"=0,"Calls to VNOP_SETATTR"=0,"Calls to VNOP_MKDIR"=0,"File defrag: Number of files that finished defragmentation"=0,"Metadata: Number of bytes read"=0,"Calls to VNOP_READLINK"=0,"Calls to VNOP_LINK"=0,"Metadata: Number of bytes written"=0,"Calls to VNOP_READDIR"=0,"File defrag: Number of files scanned for fragmentation"=0,"File defrag: Number of fragmented files found during scans"=0,"File defrag: Number of file extents split"=0,"Bytes written by user"=0,"Calls to VNOP_OPEN"=0,"Calls to VNOP_MAKENAMEDSTREAM"=0,"Write requests sent to block device"=0,"File defrag: Number of file extents reallocated"=0,"Calls to VNOP_PATHCONF"=0,"Read requests sent to block device"=0,"Calls to VNOP_SYMLINK"=0,"Calls to VNOP_EXCHANGE"=0,"Metadata: Number of fsroot bytes read"=0,"Metadata: Number of omap bytes read"=0,"Metadata: Number of snapmeta bytes read"=0,"Calls to VNOP_RMDIR"=0,"Calls to VNOP_STRATEGY"=0,"Metadata: Number of snapmeta bytes written"=0,"Calls to VNOP_GETXATTR"=0,"Decmpfs errors"=0,"Calls to VNOP_OFFTOBLK"=0,"Metadata: Number of blockref bytes read"=0,"Calls to VNOP_CLONEFILE"=0,"Metadata: Number of objects failed to read"=0,"Bytes read by user"=0,"Calls to VNOP_MKNOD"=0,"Bytes written to block device"=0,"Metadata: Number of gbitmap bytes read"=0,"Calls to VNOP_REMOVEXATTR"=0,"Calls to VNOP_WRITE"=0,"Calls to VNOP_REMOVE"=0,"Calls to VNOP_PAGEIN"=0,"Calls to VNOP_BLKTOOFF"=0,"Calls to VNOP_RECLAIM"=0,"File defrag: Number of regions to defrag found during scans"=0,"Metadata: Number of blockref bytes written"=0,"Calls to VNOP_RENAMEX"=0,"Calls to VNOP_IOCTL"=0,"Calls to VNOP_GETATTR"=0,"Calls to VNOP_SETXATTR"=0,"Write requests received from user"=0,"Metadata: Number of omap bytes written"=0,"Calls to VNOP_PAGEOUT"=0}
+        | |   "BSD Unit" = 0
+        | |   "Ejectable" = No
+        | |   "VolGroupUUID" = "00000000-0000-0000-0000-000000000000"
+        | |   "Role" = ("xART")
+        | |   "BSD Name" = "disk0s1s3"
+        | |   "BSD Major" = 1
+        | |   "Physical Block Size" = 4096
+        | |   "Status" = "Online"
+        | |   "Content Hint" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "Leaf" = Yes
+        | | }
+        | | 
+        | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003f1, registered, matched, active, busy 0 (0 ms), retain 7>
+        |     {
+        |       "IOProbeScore" = 30000
+        |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |       "IOMatchCategory" = "IOMediaBSDClient"
+        |       "IOClass" = "IOMediaBSDClient"
+        |       "IOProviderClass" = "IOMedia"
+        |       "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        |       "IOResourceMatch" = "IOBSD"
+        |     }
+        |     
+        +-o [1mBaseband Data[0m@4  <class IORegistryEntry:IOService:IOStorage:IOMedia:AppleAPFSVolume, id 0x1000003e9, registered, matched, active, busy 0 (0 ms), retain 10>
+        | | {
+        | |   "Logical Block Size" = 4096
+        | |   "Open" = Yes
+        | |   "Preferred Block Size" = 4096
+        | |   "Writable" = Yes
+        | |   "Size" = 10485760
+        | |   "Content" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "BSD Minor" = 3
+        | |   "FormattedBy" = "newfs_apfs (1412.120.2)"
+        | |   "Whole" = No
+        | |   "IOStorageFeatures" = {"Unmap"=Yes,"Priority"=Yes,"Barrier"=Yes}
+        | |   "Removable" = No
+        | |   "UUID" = "0EC3008D-9D8F-4AA6-B26C-B1D08937B558"
+        | |   "CaseSensitive" = Yes
+        | |   "Statistics" = {"Metadata: Number of fsroot bytes written"=0,"Bytes read from block device"=0,"Calls to VNOP_ALLOCATE"=0,"Calls to VNOP_LOOKUP"=0,"Calls to VNOP_GETATTRLISTBULK"=0,"Calls to VNOP_CLOSE"=0,"Calls to VNOP_MNOMAP"=0,"Calls to VNOP_INACTIVE"=0,"Calls to VNOP_REMOVENAMEDSTREAM"=0,"Calls to VNOP_READ"=0,"File defrag: Number of failed defrag attempts"=0,"Calls to VNOP_BLOCKMAP"=0,"Calls to VNOP_CREATE"=0,"Metadata: Number of objects failed to write"=0,"File defrag: Number of blocks reallocated"=0,"Calls to VNOP_LISTXATTR"=0,"Metadata: Number of gbitmap bytes written"=0,"Calls to VNOP_FSYNC"=0,"Calls to VNOP_MMAP_CHECK"=0,"Calls to VNOP_MMAP"=0,"File defrag: Number of fragmented files found that we couldn't track"=0,"Calls to VNOP_GETNAMEDSTREAM"=0,"Read requests received from user"=0,"Calls to VNOP_RENAME"=0,"Calls to VNOP_SETATTR"=0,"Calls to VNOP_MKDIR"=0,"File defrag: Number of files that finished defragmentation"=0,"Metadata: Number of bytes read"=0,"Calls to VNOP_READLINK"=0,"Calls to VNOP_LINK"=0,"Metadata: Number of bytes written"=0,"Calls to VNOP_READDIR"=0,"File defrag: Number of files scanned for fragmentation"=0,"File defrag: Number of fragmented files found during scans"=0,"File defrag: Number of file extents split"=0,"Bytes written by user"=0,"Calls to VNOP_OPEN"=0,"Calls to VNOP_MAKENAMEDSTREAM"=0,"Write requests sent to block device"=0,"File defrag: Number of file extents reallocated"=0,"Calls to VNOP_PATHCONF"=0,"Read requests sent to block device"=0,"Calls to VNOP_SYMLINK"=0,"Calls to VNOP_EXCHANGE"=0,"Metadata: Number of fsroot bytes read"=0,"Metadata: Number of omap bytes read"=0,"Metadata: Number of snapmeta bytes read"=0,"Calls to VNOP_RMDIR"=0,"Calls to VNOP_STRATEGY"=0,"Metadata: Number of snapmeta bytes written"=0,"Calls to VNOP_GETXATTR"=0,"Decmpfs errors"=0,"Calls to VNOP_OFFTOBLK"=0,"Metadata: Number of blockref bytes read"=0,"Calls to VNOP_CLONEFILE"=0,"Metadata: Number of objects failed to read"=0,"Bytes read by user"=0,"Calls to VNOP_MKNOD"=0,"Bytes written to block device"=0,"Metadata: Number of gbitmap bytes read"=0,"Calls to VNOP_REMOVEXATTR"=0,"Calls to VNOP_WRITE"=0,"Calls to VNOP_REMOVE"=0,"Calls to VNOP_PAGEIN"=0,"Calls to VNOP_BLKTOOFF"=0,"Calls to VNOP_RECLAIM"=0,"File defrag: Number of regions to defrag found during scans"=0,"Metadata: Number of blockref bytes written"=0,"Calls to VNOP_RENAMEX"=0,"Calls to VNOP_IOCTL"=0,"Calls to VNOP_GETATTR"=0,"Calls to VNOP_SETXATTR"=0,"Write requests received from user"=0,"Metadata: Number of omap bytes written"=0,"Calls to VNOP_PAGEOUT"=0}
+        | |   "BSD Unit" = 0
+        | |   "Ejectable" = No
+        | |   "VolGroupUUID" = "00000000-0000-0000-0000-000000000000"
+        | |   "Role" = ("Baseband data")
+        | |   "BSD Name" = "disk0s1s4"
+        | |   "BSD Major" = 1
+        | |   "Physical Block Size" = 4096
+        | |   "Status" = "Online"
+        | |   "Content Hint" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "Leaf" = Yes
+        | | }
+        | | 
+        | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003f0, registered, matched, active, busy 0 (0 ms), retain 7>
+        |     {
+        |       "IOProbeScore" = 30000
+        |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |       "IOMatchCategory" = "IOMediaBSDClient"
+        |       "IOClass" = "IOMediaBSDClient"
+        |       "IOProviderClass" = "IOMedia"
+        |       "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        |       "IOResourceMatch" = "IOBSD"
+        |     }
+        |     
+        +-o [1mHardware[0m@5  <class IORegistryEntry:IOService:IOStorage:IOMedia:AppleAPFSVolume, id 0x1000003ea, registered, matched, active, busy 0 (0 ms), retain 10>
+        | | {
+        | |   "Logical Block Size" = 4096
+        | |   "Open" = Yes
+        | |   "Preferred Block Size" = 4096
+        | |   "Writable" = Yes
+        | |   "Size" = 52428800
+        | |   "Content" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "BSD Minor" = 2
+        | |   "FormattedBy" = "newfs_apfs (1412.120.2)"
+        | |   "Whole" = No
+        | |   "IOStorageFeatures" = {"Unmap"=Yes,"Priority"=Yes,"Barrier"=Yes}
+        | |   "Removable" = No
+        | |   "UUID" = "3E72F676-62D7-4F4E-A453-237341824251"
+        | |   "CaseSensitive" = Yes
+        | |   "Statistics" = {"Metadata: Number of fsroot bytes written"=0,"Bytes read from block device"=0,"Calls to VNOP_ALLOCATE"=0,"Calls to VNOP_LOOKUP"=0,"Calls to VNOP_GETATTRLISTBULK"=0,"Calls to VNOP_CLOSE"=0,"Calls to VNOP_MNOMAP"=0,"Calls to VNOP_INACTIVE"=0,"Calls to VNOP_REMOVENAMEDSTREAM"=0,"Calls to VNOP_READ"=0,"File defrag: Number of failed defrag attempts"=0,"Calls to VNOP_BLOCKMAP"=0,"Calls to VNOP_CREATE"=0,"Metadata: Number of objects failed to write"=0,"File defrag: Number of blocks reallocated"=0,"Calls to VNOP_LISTXATTR"=0,"Metadata: Number of gbitmap bytes written"=0,"Calls to VNOP_FSYNC"=0,"Calls to VNOP_MMAP_CHECK"=0,"Calls to VNOP_MMAP"=0,"File defrag: Number of fragmented files found that we couldn't track"=0,"Calls to VNOP_GETNAMEDSTREAM"=0,"Read requests received from user"=0,"Calls to VNOP_RENAME"=0,"Calls to VNOP_SETATTR"=0,"Calls to VNOP_MKDIR"=0,"File defrag: Number of files that finished defragmentation"=0,"Metadata: Number of bytes read"=0,"Calls to VNOP_READLINK"=0,"Calls to VNOP_LINK"=0,"Metadata: Number of bytes written"=0,"Calls to VNOP_READDIR"=0,"File defrag: Number of files scanned for fragmentation"=0,"File defrag: Number of fragmented files found during scans"=0,"File defrag: Number of file extents split"=0,"Bytes written by user"=0,"Calls to VNOP_OPEN"=0,"Calls to VNOP_MAKENAMEDSTREAM"=0,"Write requests sent to block device"=0,"File defrag: Number of file extents reallocated"=0,"Calls to VNOP_PATHCONF"=0,"Read requests sent to block device"=0,"Calls to VNOP_SYMLINK"=0,"Calls to VNOP_EXCHANGE"=0,"Metadata: Number of fsroot bytes read"=0,"Metadata: Number of omap bytes read"=0,"Metadata: Number of snapmeta bytes read"=0,"Calls to VNOP_RMDIR"=0,"Calls to VNOP_STRATEGY"=0,"Metadata: Number of snapmeta bytes written"=0,"Calls to VNOP_GETXATTR"=0,"Decmpfs errors"=0,"Calls to VNOP_OFFTOBLK"=0,"Metadata: Number of blockref bytes read"=0,"Calls to VNOP_CLONEFILE"=0,"Metadata: Number of objects failed to read"=0,"Bytes read by user"=0,"Calls to VNOP_MKNOD"=0,"Bytes written to block device"=0,"Metadata: Number of gbitmap bytes read"=0,"Calls to VNOP_REMOVEXATTR"=0,"Calls to VNOP_WRITE"=0,"Calls to VNOP_REMOVE"=0,"Calls to VNOP_PAGEIN"=0,"Calls to VNOP_BLKTOOFF"=0,"Calls to VNOP_RECLAIM"=0,"File defrag: Number of regions to defrag found during scans"=0,"Metadata: Number of blockref bytes written"=0,"Calls to VNOP_RENAMEX"=0,"Calls to VNOP_IOCTL"=0,"Calls to VNOP_GETATTR"=0,"Calls to VNOP_SETXATTR"=0,"Write requests received from user"=0,"Metadata: Number of omap bytes written"=0,"Calls to VNOP_PAGEOUT"=0}
+        | |   "BSD Unit" = 0
+        | |   "Ejectable" = No
+        | |   "VolGroupUUID" = "00000000-0000-0000-0000-000000000000"
+        | |   "Role" = ("Hardware")
+        | |   "BSD Name" = "disk0s1s5"
+        | |   "BSD Major" = 1
+        | |   "Physical Block Size" = 4096
+        | |   "Status" = "Online"
+        | |   "Content Hint" = "41504653-0000-11AA-AA11-00306543ECAC"
+        | |   "Leaf" = Yes
+        | | }
+        | | 
+        | +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003ec, registered, matched, active, busy 0 (0 ms), retain 7>
+        |     {
+        |       "IOProbeScore" = 30000
+        |       "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        |       "IOMatchCategory" = "IOMediaBSDClient"
+        |       "IOClass" = "IOMediaBSDClient"
+        |       "IOProviderClass" = "IOMedia"
+        |       "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        |       "IOResourceMatch" = "IOBSD"
+        |     }
+        |     
+        +-o [1mUpdate[0m@6  <class IORegistryEntry:IOService:IOStorage:IOMedia:AppleAPFSVolume, id 0x1000003eb, registered, matched, active, busy 0 (1 ms), retain 10>
+          | {
+          |   "Logical Block Size" = 4096
+          |   "Open" = Yes
+          |   "Preferred Block Size" = 4096
+          |   "Writable" = Yes
+          |   "Size" = 63926554624
+          |   "Content" = "41504653-0000-11AA-AA11-00306543ECAC"
+          |   "BSD Minor" = 5
+          |   "FormattedBy" = "newfs_apfs (1412.120.2)"
+          |   "Whole" = No
+          |   "IOStorageFeatures" = {"Unmap"=Yes,"Priority"=Yes,"Barrier"=Yes}
+          |   "Removable" = No
+          |   "UUID" = "C7FF77AD-02DE-4C77-B413-DD4CD8CF88FE"
+          |   "CaseSensitive" = Yes
+          |   "Statistics" = {"Metadata: Number of fsroot bytes written"=0,"Bytes read from block device"=0,"Calls to VNOP_ALLOCATE"=0,"Calls to VNOP_LOOKUP"=0,"Calls to VNOP_GETATTRLISTBULK"=0,"Calls to VNOP_CLOSE"=0,"Calls to VNOP_MNOMAP"=0,"Calls to VNOP_INACTIVE"=0,"Calls to VNOP_REMOVENAMEDSTREAM"=0,"Calls to VNOP_READ"=0,"File defrag: Number of failed defrag attempts"=0,"Calls to VNOP_BLOCKMAP"=0,"Calls to VNOP_CREATE"=0,"Metadata: Number of objects failed to write"=0,"File defrag: Number of blocks reallocated"=0,"Calls to VNOP_LISTXATTR"=0,"Metadata: Number of gbitmap bytes written"=0,"Calls to VNOP_FSYNC"=0,"Calls to VNOP_MMAP_CHECK"=0,"Calls to VNOP_MMAP"=0,"File defrag: Number of fragmented files found that we couldn't track"=0,"Calls to VNOP_GETNAMEDSTREAM"=0,"Read requests received from user"=0,"Calls to VNOP_RENAME"=0,"Calls to VNOP_SETATTR"=0,"Calls to VNOP_MKDIR"=0,"File defrag: Number of files that finished defragmentation"=0,"Metadata: Number of bytes read"=0,"Calls to VNOP_READLINK"=0,"Calls to VNOP_LINK"=0,"Metadata: Number of bytes written"=0,"Calls to VNOP_READDIR"=0,"File defrag: Number of files scanned for fragmentation"=0,"File defrag: Number of fragmented files found during scans"=0,"File defrag: Number of file extents split"=0,"Bytes written by user"=0,"Calls to VNOP_OPEN"=0,"Calls to VNOP_MAKENAMEDSTREAM"=0,"Write requests sent to block device"=0,"File defrag: Number of file extents reallocated"=0,"Calls to VNOP_PATHCONF"=0,"Read requests sent to block device"=0,"Calls to VNOP_SYMLINK"=0,"Calls to VNOP_EXCHANGE"=0,"Metadata: Number of fsroot bytes read"=0,"Metadata: Number of omap bytes read"=0,"Metadata: Number of snapmeta bytes read"=0,"Calls to VNOP_RMDIR"=0,"Calls to VNOP_STRATEGY"=0,"Metadata: Number of snapmeta bytes written"=0,"Calls to VNOP_GETXATTR"=0,"Decmpfs errors"=0,"Calls to VNOP_OFFTOBLK"=0,"Metadata: Number of blockref bytes read"=0,"Calls to VNOP_CLONEFILE"=0,"Metadata: Number of objects failed to read"=0,"Bytes read by user"=0,"Calls to VNOP_MKNOD"=0,"Bytes written to block device"=0,"Metadata: Number of gbitmap bytes read"=0,"Calls to VNOP_REMOVEXATTR"=0,"Calls to VNOP_WRITE"=0,"Calls to VNOP_REMOVE"=0,"Calls to VNOP_PAGEIN"=0,"Calls to VNOP_BLKTOOFF"=0,"Calls to VNOP_RECLAIM"=0,"File defrag: Number of regions to defrag found during scans"=0,"Metadata: Number of blockref bytes written"=0,"Calls to VNOP_RENAMEX"=0,"Calls to VNOP_IOCTL"=0,"Calls to VNOP_GETATTR"=0,"Calls to VNOP_SETXATTR"=0,"Write requests received from user"=0,"Metadata: Number of omap bytes written"=0,"Calls to VNOP_PAGEOUT"=0}
+          |   "BSD Unit" = 0
+          |   "Ejectable" = No
+          |   "VolGroupUUID" = "00000000-0000-0000-0000-000000000000"
+          |   "Role" = ("Update")
+          |   "BSD Name" = "disk0s1s6"
+          |   "BSD Major" = 1
+          |   "Physical Block Size" = 4096
+          |   "Status" = "Online"
+          |   "Content Hint" = "41504653-0000-11AA-AA11-00306543ECAC"
+          |   "Leaf" = Yes
+          | }
+          | 
+          +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003ee, registered, matched, active, busy 0 (0 ms), retain 7>
+              {
+                "IOProbeScore" = 30000
+                "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+                "IOMatchCategory" = "IOMediaBSDClient"
+                "IOClass" = "IOMediaBSDClient"
+                "IOProviderClass" = "IOMedia"
+                "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+                "IOResourceMatch" = "IOBSD"
+              }
+              
+
++-o [1mAPPLE SSD AP0064L Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x1000003f8, registered, matched, active, busy 0 (31 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = No
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk1"
+  |   "Ejectable" = No
+  |   "Preferred Block Size" = 4096
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Internal.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 8
+  |   "Writable" = Yes
+  |   "BSD Major" = 1
+  |   "Size" = 8388608
+  |   "Open" = No
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 1
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000003f9, registered, matched, active, busy 0 (0 ms), retain 6>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
++-o [1mAPPLE SSD AP0064L Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x100000404, registered, matched, active, busy 0 (0 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = No
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk2"
+  |   "Ejectable" = No
+  |   "Preferred Block Size" = 4096
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Internal.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 9
+  |   "Writable" = Yes
+  |   "BSD Major" = 1
+  |   "Size" = 1048576
+  |   "Open" = No
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 2
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x100000405, registered, matched, active, busy 0 (0 ms), retain 6>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
++-o [1mAPPLE SSD AP0064L Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x10000040b, registered, matched, active, busy 0 (1 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = No
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk3"
+  |   "Ejectable" = No
+  |   "Preferred Block Size" = 4096
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Internal.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 10
+  |   "Writable" = Yes
+  |   "BSD Major" = 1
+  |   "Size" = 3145728
+  |   "Open" = No
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 3
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x10000040c, registered, matched, active, busy 0 (0 ms), retain 6>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
++-o [1mApple disk image Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x100000439, registered, matched, active, busy 0 (0 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = Yes
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk4"
+  |   "Ejectable" = Yes
+  |   "Preferred Block Size" = 512
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Removable.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 11
+  |   "Writable" = Yes
+  |   "BSD Major" = 1
+  |   "Size" = 731136
+  |   "Open" = Yes
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 4
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x10000043a, registered, matched, active, busy 0 (0 ms), retain 7>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
++-o [1mApple disk image Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x100000549, registered, matched, active, busy 0 (0 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = Yes
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk5"
+  |   "Ejectable" = Yes
+  |   "Preferred Block Size" = 512
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Removable.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 12
+  |   "Writable" = No
+  |   "BSD Major" = 1
+  |   "Size" = 67108864
+  |   "Open" = Yes
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 5
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x10000054a, registered, matched, active, busy 0 (0 ms), retain 7>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
++-o [1mApple disk image Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x10000056a, registered, matched, active, busy 0 (0 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = Yes
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk6"
+  |   "Ejectable" = Yes
+  |   "Preferred Block Size" = 512
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Removable.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 13
+  |   "Writable" = No
+  |   "BSD Major" = 1
+  |   "Size" = 67108864
+  |   "Open" = Yes
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 6
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x10000056b, registered, matched, active, busy 0 (0 ms), retain 7>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
++-o [1mApple disk image Media[0m  <class IORegistryEntry:IOService:IOStorage:IOMedia, id 0x1000036dc, registered, matched, active, busy 0 (2 ms), retain 10>
+  | {
+  |   "Content" = ""
+  |   "Removable" = Yes
+  |   "Whole" = Yes
+  |   "Leaf" = Yes
+  |   "BSD Name" = "disk7"
+  |   "Ejectable" = Yes
+  |   "Preferred Block Size" = 512
+  |   "IOMediaIcon" = {"IOBundleResourceFile"="Removable.icns","CFBundleIdentifier"="com.apple.iokit.IOStorageFamily"}
+  |   "BSD Minor" = 14
+  |   "Writable" = No
+  |   "BSD Major" = 1
+  |   "Size" = 28270080
+  |   "Open" = Yes
+  |   "Content Hint" = ""
+  |   "BSD Unit" = 7
+  | }
+  | 
+  +-o [1mIOMediaBSDClient[0m  <class IORegistryEntry:IOService:IOMediaBSDClient, id 0x1000036dd, registered, matched, active, busy 0 (0 ms), retain 7>
+      {
+        "IOProbeScore" = 30000
+        "CFBundleIdentifier" = "com.apple.iokit.IOStorageFamily"
+        "IOMatchCategory" = "IOMediaBSDClient"
+        "IOClass" = "IOMediaBSDClient"
+        "IOProviderClass" = "IOMedia"
+        "CFBundleIdentifierKernel" = "com.apple.iokit.IOStorageFamily"
+        "IOResourceMatch" = "IOBSD"
+      }
+      
+
